@@ -28,6 +28,18 @@ namespace physicsProperties {
     }   
 
 
+    /**
+     * @param sprite
+     */
+
+    //% sprite.shadow="variables_get" 
+    //%sprite.delf="playerSprite"
+
+    //% block="set $sprite as player"
+    export function setPlayerWithPhysics (sprite: Sprite) {
+        scene.cameraFollowSprite(sprite)
+        controller.moveSprite(sprite, 100, 0)
+    }
 
   
 }
